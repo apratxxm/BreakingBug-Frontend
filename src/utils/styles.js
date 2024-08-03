@@ -5,6 +5,7 @@ import {
     tableCellClasses,
     Drawer as MuiDrawer,
     AppBar as MuiAppBar,
+    Button, //added button import from materialui
 } from "@mui/material";
 import { Link } from "react-scroll";
 
@@ -73,6 +74,16 @@ export const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 
         },
     }),
 );
+
+export const LightPurpleButton = styled(Button)`
+  background-color: lightpurple;
+  // Other styles
+`; //defined button style
+
+export const BasicButton = styled(Button)`
+  background-color: basic;
+  // Other styles
+`;//defined button style
 
 export const NavLogo = styled(Link)`
     display: flex;

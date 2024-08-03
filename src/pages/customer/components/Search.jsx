@@ -28,9 +28,9 @@ const Search = () => {
             <InputSearchBase
                 placeholder="Search for products, brands and more"
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(etargetvalue)}
+                onChange={(e) => setSearchTerm(e.target.value)} //e.target.value did not have corrrect syntax and was written as etargetvalue
                 onKeyDown={(e) => {
-                    if (ekey !== 'Enter') {
+                    if (e.key !== 'Enter') { //same for ekey showuld have been e.key
                         handleSearch();
                     }
                 }}

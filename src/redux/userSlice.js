@@ -303,6 +303,7 @@ export const {
     getError,
     getSearchFailed,
     customersListSuccess,
+    getCustomersListFailed, // added getCustomersListFailed export 
     getSpecificProductsFailed,
     specificProductSuccess,
     addToCart,
@@ -311,6 +312,7 @@ export const {
     removeAllFromCart,
     fetchProductDetailsFromCart,
     updateCurrentUser,
+    setFilteredProducts, //added setFilteredProducts export
     
 } = userSlice.actions;
 
